@@ -33,7 +33,7 @@ function App() {
         />
         <Route path="/register" Component={() => {
             const token = localStorage.getItem("token");
-            return token ? <Contacts /> : <Login/>;}} />
+            return token ? <Contacts /> : <Register/>;}} />
         <Route path="/login" Component={() => {
             const token = localStorage.getItem("token");
             return token ? <Contacts /> : <Login/>;}} />
