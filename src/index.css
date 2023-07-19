@@ -179,8 +179,9 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
+    display: block;
+    margin: 0 auto;
+  } 
   .form-container button:hover {
     background-color: #0056b3;
   }
