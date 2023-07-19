@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import{Link} from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -89,7 +90,9 @@ const Register = () => {
         </div>
 
         <button type="submit">Submit</button>
+
       </form>
+        <Link to="/login">Already have an account? Login</Link>
 
       <ToastContainer />
     </>

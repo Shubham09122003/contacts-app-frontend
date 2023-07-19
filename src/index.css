@@ -1,0 +1,245 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d479a; /* Change the background color here */
+      
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+/* index.css */
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Add some global styling */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Form styles */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 30px; /* Adjusted padding */
+    border-radius: 5px;
+    width: 350px; /* Adjusted width */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+  
+  .form-container input {
+    margin-bottom: 15px; /* Adjusted margin */
+    padding: 12px; /* Adjusted padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .form-container button {
+    margin-top: 15px; /* Adjusted margin */
+    padding: 12px; /* Adjusted padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link styles */
+  .form-container a {
+    display: block;
+    text-align: center;
+    margin-top: 15px; /* Adjusted margin */
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .form-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Table styles */
+  .table-container {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #2d479a;
+  }
+  
+  .table-container th,
+  .table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Other styles */
+  .Toastify__toast-container {
+    z-index: 9999;
+    font-size: 14px;
+    top: 80px;
+  }
+  
+
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .contacts-container button {
+    margin-bottom: 20px;
+  }
+  
+  .contacts-container table {
+    margin-top: 20px;
+  }
+  
+  /* Adjust spacing between table rows */
+  .contacts-container table tbody tr {
+    margin-bottom: 10px;
+  }

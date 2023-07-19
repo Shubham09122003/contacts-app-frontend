@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import{Link} from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -56,7 +57,8 @@ const Register = () => {
   };
 
   return (
-    <>
+    <div className="page-container">
+      <div className="form-container">
       <form onSubmit={addUser}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -96,11 +98,15 @@ const Register = () => {
         </div>
 
         <button type="submit">Submit</button>
-      </form>
 
+
+      </form>
+        <Link to="/login">Already have an account? Login</Link>
+      </div>
       <ToastContainer />
-    </>
+    </div>
   );
 };
 
 export default Register;
+

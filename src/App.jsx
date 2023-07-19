@@ -14,7 +14,7 @@ function App() {
           path="/"
           Component={() => {
             const token = localStorage.getItem("token");
-            return token ? <Contacts /> : Navigate({ to: "/login" });
+            return token ? <Contacts /> : Navigate({ to: "/register" });
           }}
         />
         <Route

@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import {useNavigate} from "react-router-dom"
 const Contacts = () => {
+  const navigate=useNavigate();
   const [contacts, setContacts] = useState([]);
 
   const fetchContacts = () => {
-    axios.get("http://localhost:3000/get-contacts").then((res) => {
+    axiosInstance()
+    .get("/get-contacts")
+    .then((res) => {
       setContacts(res.data.contacts);
     });
   };
