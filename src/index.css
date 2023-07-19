@@ -151,6 +151,8 @@ body {
     width: 350px; /* Adjusted width */
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Center the child items horizontally */
+    margin: 0 auto; /* Center the form container horizontally inside its parent */
   }
   
   .form-container h2 {
@@ -171,7 +173,6 @@ body {
   }
   
   .form-container button {
-    margin-top: 15px; /* Adjusted margin */
     padding: 12px; /* Adjusted padding */
     background-color: #007bff;
     color: #fff;
