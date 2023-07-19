@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import axiosInstance from "../../axios";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import{Link} from "react-router-dom";
@@ -17,8 +17,8 @@ const Login = () => {
       password,
     };
 
-    axios
-      .post("http://localhost:3000/login", requestBody)
+    axiosInstance()
+      .post("/login", requestBody)
       .then((res) => {
         setUsername("");
         setPassword("");

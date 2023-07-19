@@ -28,7 +28,7 @@ const Contacts = () => {
 
   return (
     <>
-      <div class="contacts-container">
+      <div className="contacts-container">
         <button
           onClick={() => {
             localStorage.removeItem("token");
