@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axiosInstance from "../../src/axios";
 import {useNavigate} from "react-router-dom"
 const Contacts = () => {
   const navigate=useNavigate();
