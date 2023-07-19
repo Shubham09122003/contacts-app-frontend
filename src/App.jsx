@@ -12,34 +12,34 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={() => {
+          Component={() => {
             const token = localStorage.getItem("token");
             return token ? <Contacts /> : Navigate({ to: "/register" });
           }}
         />
         <Route
           path="/add-contact"
-          element={() => {
+          Component={() => {
             const token = localStorage.getItem("token");
             return token ? <ContactForm /> : Navigate({ to: "/login" });
           }}
         />
         <Route
           path="/update-contact/:contact_id"
-          element={() => {
+          Component={() => {
             const token = localStorage.getItem("token");
             return token ? <ContactForm /> : Navigate({ to: "/login" });
           }}
         />
-        <Route path="/register" element={() => {
+        <Route path="/register" Component={() => {
             const token = localStorage.getItem("token");
-            return token ? <Contacts /> : <Register/>;}} />
-        <Route path="/login" element={() => {
+            return token ? <Contacts /> : <Login/>;}} />
+        <Route path="/login" Component={() => {
             const token = localStorage.getItem("token");
             return token ? <Contacts /> : <Login/>;}} />
         <Route
           path="*"
-          element={() => {
+          Component={() => {
             Navigate({ to: "/login" });
           }}
         />
