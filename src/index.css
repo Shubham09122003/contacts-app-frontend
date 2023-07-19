@@ -217,11 +217,11 @@ body {
   }
   
   /* Other styles */
-  .Toastify__toast-container {
+  /* .Toastify__toast-container {
     z-index: 9999;
     font-size: 14px;
     top: 80px;
-  }
+  } */
   
 
   .contacts-container {
