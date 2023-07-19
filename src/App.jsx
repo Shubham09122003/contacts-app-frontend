@@ -31,8 +31,12 @@ function App() {
             return token ? <ContactForm /> : Navigate({ to: "/login" });
           }}
         />
-        <Route path="/register" Component={Register} />
-        <Route path="/login" Component={Login} />
+        <Route path="/register" Component={() => {
+            const token = localStorage.getItem("token");
+            return token ? <Contacts /> : <Register/>;}} />
+        <Route path="/login" Component={() => {
+            const token = localStorage.getItem("token");
+            return token ? <Contacts /> : <Login/>;}} />
         <Route
           path="*"
           Component={() => {
