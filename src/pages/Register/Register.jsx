@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import axiosInstance from "../../axios";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import{Link} from "react-router-dom";
@@ -19,8 +19,8 @@ const Register = () => {
       password,
     };
 
-    axios
-      .post("http://localhost:3000/register", requestBody)
+    axiosInstance()
+      .post("/register", requestBody)
       .then((res) => {
         setName("");
         setUsername("");
