@@ -1,10 +1,8 @@
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2d479a; /* Change the background color here */
+    background-color: #2d479a; 
       
   }
   
@@ -115,13 +113,6 @@ body {
     text-decoration: underline;
   }
 
-
-
-
-
-/* index.css */
-
-/* Reset some default styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -131,8 +122,7 @@ body {
   body {
     font-family: Arial, sans-serif;
   }
-  
-  /* Add some global styling */
+
   .page-container {
     display: flex;
     flex-direction: column;
@@ -141,18 +131,18 @@ body {
     height: 100vh;
   }
   
-  /* Form styles */
+
   .form-container {
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
-    padding: 30px; /* Adjusted padding */
+    padding: 30px;
     border-radius: 5px;
-    width: 350px; /* Adjusted width */
+    width: 350px; 
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    align-items: center; /* Center the child items horizontally */
-    margin: 0 auto; /* Center the form container horizontally inside its parent */
+    align-items: center; 
+    margin: 0 auto; 
   }
   
   .form-container h2 {
@@ -161,19 +151,19 @@ body {
   }
   
   .form-container label {
-    margin-bottom: 10px; /* Adjusted margin */
+    margin-bottom: 10px;
   }
   
   .form-container input {
-    margin-bottom: 15px; /* Adjusted margin */
-    padding: 12px; /* Adjusted padding */
+    margin-bottom: 15px; 
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
   }
   
   .form-container button {
-    padding: 12px; /* Adjusted padding */
+    padding: 12px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -186,11 +176,11 @@ body {
     background-color: #0056b3;
   }
   
-  /* Link styles */
+
   .form-container a {
     display: block;
     text-align: center;
-    margin-top: 15px; /* Adjusted margin */
+    margin-top: 15px; 
     font-size: 14px;
     color: #007bff;
     text-decoration: none;
@@ -200,7 +190,7 @@ body {
     text-decoration: underline;
   }
   
-  /* Table styles */
+ 
   .table-container {
     width: 80%;
     border-collapse: collapse;
@@ -218,7 +208,6 @@ body {
     background-color: #f2f2f2;
   }
   
-  /* Other styles */
   .Toastify__toast-container {
     z-index: 9999;
     font-size: 14px;
@@ -241,7 +230,7 @@ body {
     margin-top: 20px;
   }
   
-  /* Adjust spacing between table rows */
+
   .contacts-container table tbody tr {
     margin-bottom: 10px;
   }

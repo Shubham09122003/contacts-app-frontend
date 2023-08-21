@@ -14,7 +14,6 @@ const ContactForm = () => {
     contact_id = location.pathname.split("/")[2];
   }
 
-  // console.log(route, contact_id);
   const getContact = () => {
     axiosInstance()
       .get("/get-contact/" + contact_id)
@@ -32,7 +31,6 @@ const ContactForm = () => {
 
   const addContact = (e) => {
     e.preventDefault();
-    // make api call to add contact
 
     const requestBody = {
       name,

@@ -5,7 +5,6 @@ const ContactForm = () => {
 
   const addContact = (e) => {
     e.preventDefault();
-    // make api call to add contact
   };
 
   return (
